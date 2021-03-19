@@ -1,0 +1,366 @@
+/* Básico das Páginas */
+body{
+  margin: 0;
+}
+
+.App{
+  text-align: center;
+}
+
+.App-header {
+  background-color: #05254b;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.Menu{
+  background-color: #0d5482;
+  height: 80px;
+}
+
+.MenuB{
+  width: 40px;
+  height: 40px;
+  float: left;
+  margin: 0.5em;
+  padding: 0.5em;
+}
+
+/* Imagens/Iframe Paciente*/
+#Folder{
+  width: 1300px;
+  height: 900px;
+  margin: 1em;
+  padding: 1em;
+}
+
+#BFolder{
+  position: absolute;
+  width: 1300px;
+  height: 180px;
+  left: 25px;
+  top: 15%;
+}
+
+#BFolderItens{
+  position: absolute;
+  font-size: 28px; 
+  color: #ffffff;
+  text-align: justify;
+}
+
+#Iframe{
+  position: absolute;
+  font-size: 28px; 
+  width: 1200px;
+  height: 550px;
+  top: 50%;
+  border: 0;
+}
+
+/* Botões página Paciente */
+#AddP{
+  color: #ffffff;
+  position: absolute;
+  width: 170px;
+  height: 105px;
+  left: 0px;
+  margin: 70px;
+}
+
+#EditP{
+  position: absolute;
+  width: 170px;
+  height: 105px;
+  left: 235px;
+  margin: 70px;
+}
+
+#DeleteP{
+  position: absolute;
+  width: 170px;
+  height: 105px;
+  left: 450px;
+  margin: 70px;
+}
+
+#PPaciente{
+  position: absolute;
+  width: 75px;
+  height: 55px;
+  left: 740px;
+  margin: 50px;
+}
+
+#ListaPaciente{
+  position: absolute;
+  width: 75px;
+  height: 55px;
+  left: 740px;
+  margin: 115px;
+}
+
+#PesquisarPaciente{
+  position: absolute;
+  width: 75px;
+  height: 55px;
+  left: 635px;
+  margin: 115px;
+}
+
+#SaveP{
+  position: absolute;
+  width: 80px;
+  height: 80px;
+  top: 110%;
+  right: 100px;
+}
+
+#CancelP{
+  position: absolute;
+  width: 80px;
+  height: 80px;
+  top: 110%;
+  right: 10px;
+}
+
+/* Inputs página Paciente */
+input[type="text"]{
+    padding: 20px 20px;
+    margin: 8px 10px;
+    box-sizing: border-box;
+    outline: none;
+    font-size: 20px;
+}
+
+#Nome{
+  width: 700px;
+  height: 20px;
+}
+
+#Idade{
+  width: 70px;
+  height: 20px;
+}
+
+#Sexo{
+  width: 70px;
+  height: 20px;
+}
+
+#DataNasc{
+  width: 147px;
+  height: 20px;
+}
+
+#CPF{
+  width: 250px;
+  height: 20px;
+}
+
+#EstadoCivil{
+  width: 214px;
+  height: 20px;
+}
+
+#DDD{
+  width: 70px;
+  height: 20px;
+}
+
+#Telefone{
+  width: 155px;
+  height: 20px;
+}
+
+#Email{
+  width: 254px;
+  height: 20px;
+}
+
+#Endereco{
+  width: 732px;
+  height: 20px;
+}
+
+#Numero{
+  width: 195px;
+  height: 20px;
+}
+
+#Complemento{
+  width: 938px;
+  height: 20px;
+}
+
+#Bairro{
+  width: 600px;
+  height: 20px;
+}
+
+#UF{
+  width: 80px;
+  height: 20px;
+}
+
+#CEP{
+  width: 188px;
+  height: 20px;
+}
+
+/* Tabela gerada automaticamente */
+table.blueTable {
+  border: 1px solid #1C6EA4;
+  background-color: #FFFFFF;
+  width: 100%;
+  text-align: left;
+  border-collapse: collapse;
+}
+table.blueTable td, table.blueTable th {
+  border: 1px solid #AAAAAA;
+  padding: 3px 2px;
+}
+table.blueTable tbody td {
+  font-size: 13px;
+}
+table.blueTable tr:nth-child(even) {
+  background: #D0E4F5;
+}
+table.blueTable thead {
+  background: #3BAEE4;
+  background: -moz-linear-gradient(top, #6cc2eb 0%, #4eb6e6 66%, #3BAEE4 100%);
+  background: -webkit-linear-gradient(top, #6cc2eb 0%, #4eb6e6 66%, #3BAEE4 100%);
+  background: linear-gradient(to bottom, #6cc2eb 0%, #4eb6e6 66%, #3BAEE4 100%);
+  border-bottom: 2px solid #444444;
+}
+table.blueTable thead th {
+  font-size: 15px;
+  font-weight: bold;
+  color: #FFFFFF;
+  border-left: 2px solid #D0E4F5;
+}
+table.blueTable thead th:first-child {
+  border-left: none;
+}
+
+table.blueTable tfoot {
+  font-size: 14px;
+  font-weight: bold;
+  color: #FFFFFF;
+  background: #D0E4F5;
+  background: -moz-linear-gradient(top, #dcebf7 0%, #d4e6f6 66%, #D0E4F5 100%);
+  background: -webkit-linear-gradient(top, #dcebf7 0%, #d4e6f6 66%, #D0E4F5 100%);
+  background: linear-gradient(to bottom, #dcebf7 0%, #d4e6f6 66%, #D0E4F5 100%);
+  border-top: 2px solid #444444;
+}
+table.blueTable tfoot td {
+  font-size: 14px;
+}
+
+/* Imagens/Iframe Prontuário */
+#divBox{
+  position: absolute;
+  width: 335px;
+  height: 650px;
+  font-size: 28px;
+  text-align: justify;
+  top: 36%;
+  left: 100px;
+}
+
+#divTable{
+  position: absolute;
+  width: 810px;
+  height: 650px;
+  font-size: 28px;
+  text-align: justify;
+  color: black;
+  top: 36%;
+  right: 100px;
+}
+
+#Prontuario{
+  width: 1300px;
+  height: 900px;
+  top: 12%;
+}
+
+// Animations
+
+@keyframes slideIn {
+  0% {
+    max-height: 0;
+    opacity: 0;
+  }
+
+  100% {
+    max-height: 999px;
+    opacity: 1;
+  }
+}
+
+@keyframes slideOut {
+  0% {
+    height: auto;
+    opacity: 1;
+  }
+
+  100% {
+    height: 0;
+    opacity: 0;
+  }
+}
+
+body {
+  font-family: "Lato";
+  color: #444;
+}
+
+.tree,
+.subtree {
+  list-style-type: none;
+}
+
+.subtree {
+  overflow: hidden;
+  transition: all 0.2s ease-in-out;
+  margin-bottom: 0;
+}
+
+.tree-toggle-label {
+  user-select: none;
+  cursor: pointer;
+  &:after {
+    display: inline-block;
+    content: "+";
+    color: #999;
+    margin-left: 8px;
+  }
+}
+
+.tree-toggle {
+  position: absolute;
+  opacity: 0;
+  z-index: -1;
+}
+
+.tree-toggle:checked + .tree-toggle-label:after {
+  content: "-";
+}
+
+.tree-toggle + .tree-toggle-label + .subtree {
+  animation-name: slideOut;
+  animation-duration: 0.25s;
+  animation-fill-mode: both;
+}
+
+.tree-toggle:checked + .tree-toggle-label + .subtree {
+  animation-name: slideIn;
+  animation-duration: 0.25s;
+  animation-fill-mode: both;
+}
