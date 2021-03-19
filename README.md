@@ -1,3 +1,12 @@
+## HTML e CSS Básico pronto.
+O HTML e CSS base para todas as telas concluído.
+
+## Navegação de páginas.
+É possível navegar de uma página para outra por meio de algum dos botões e links.
+
+## Página de Paciente e Prontuário.
+Páginas de Paaciente e Prontuário concluídas.
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Running on Repl.it
