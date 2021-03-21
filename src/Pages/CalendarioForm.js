@@ -103,7 +103,7 @@ export default function CalendarioForm(){
           </select>
           Observações:
           <br></br>
-          <textarea id="Observacoes"></textarea>
+          <textarea id="ObservacoesC"></textarea>
           <br></br>
           <br></br>
           <br></br>
