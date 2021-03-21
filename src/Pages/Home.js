@@ -17,8 +17,8 @@ export default function Home(){
       <a href='/Prontuario'><img className="MenuB" src={ProntuarioButton} alt="a"/></a>
     </div>
       <header className="App-header">
-        <p>
-          Home
+        <p id="home">
+          Bem-vindo
         </p>
       </header>
     </div>

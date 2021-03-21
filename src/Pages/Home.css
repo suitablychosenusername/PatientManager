@@ -15,7 +15,6 @@ body{
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  color: white;
 }
 
 .Menu{
@@ -31,6 +30,10 @@ body{
   padding: 0.5em;
 }
 
+#home{
+ font-size: 32px;
+ color: white;
+}
 /* Imagens/Iframe Paciente*/
 #Folder{
   width: 1300px;
@@ -363,4 +366,123 @@ body {
   animation-name: slideIn;
   animation-duration: 0.25s;
   animation-fill-mode: both;
+}
+
+#Sintomas{
+  width: 70%;
+}
+
+#Historico{
+  width: 82.3%;
+}
+
+#Tratamento{
+  width: 66.4%;
+}
+
+#Andamento{
+  width: 79.1%;
+}
+
+#Receita{
+  width: 84.8%;
+}
+
+#Observacoes{
+  width: 77.5%;
+}
+
+/* Calendário */
+#divOptions{
+  position: absolute;
+  width: 100%;
+  height: 10%;
+}
+
+#divTableCalendario{
+  top: 22.2%;
+  left: 33%;
+  position: absolute;
+  width: 55%;
+  height: 85%;
+}
+
+#Calendario{
+  font-size: 18px;
+  position: absolute;
+  background-color: gray;
+  top: 22.2%;
+  left: 7%;
+  width: 18%;
+  height: 35%;
+}
+
+/*Buttons Calendario*/
+#Remove{
+  top: 88.7%;
+  left: 23%;
+  position: absolute;
+  width: 3%;
+  height: 6%;
+}
+
+#Accept{
+  top: 88.7%;
+  left: 18%;
+  position: absolute;
+  width: 3%;
+  height: 6%;
+}
+
+#Update{
+  top: 88.7%;
+  left: 11%;
+  position: absolute;
+  width: 4.5%;
+  height: 7%;
+}
+
+#Add{
+  top: 88.7%;
+  left: 6%;
+  position: absolute;
+  width: 3%;
+  height: 6%;
+}
+
+/*Selects*/
+#Day{
+  font-size: 18px;
+  top: 30%;
+  left: 7%;
+  position: absolute;
+  width: 5%;
+  height: 50%;
+}
+
+#Month{
+  font-size: 18px;
+  top: 30%;
+  left: 13%;
+  position: absolute;
+  width: 6%;
+  height: 50%;
+}
+
+#Year{
+  font-size: 18px;
+  top: 30%;
+  left: 20%;
+  position: absolute;
+  width: 5%;
+  height: 50%;
+}
+
+#Dr{
+  font-size: 18px;
+  top: 30%;
+  left: 33%;
+  position: absolute;
+  width: 13%;
+  height: 50%;
 }
