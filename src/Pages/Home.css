@@ -486,3 +486,190 @@ body {
   width: 13%;
   height: 50%;
 }
+
+/*CalendarioForm Div*/
+#calendarioForm{
+  background-color: #2187b7;
+  color: white;
+  text-align: left;
+  font-size: 28px;
+  position: absolute;
+  left: 49.5%;
+  top: 14%;
+  width: 50%;
+  height: 85%;
+}
+
+#CFormTable{
+  position: absolute;
+  left: 5%;
+  top: 48%;
+  width: 40%;
+  height: 50%;
+}
+
+#CFormCalendario{
+  font-size: 18px;
+  position: absolute;
+  background-color: gray;
+  top: 7%;
+  left: 5%;
+  width: 18%;
+  height: 35%;
+}
+
+/*Select/inputs CalendarioForm*/
+#DrCF{
+  font-size: 18px;
+  top: 37%;
+  left: 30%;
+  position: absolute;
+  width: 13%;
+  height: 5%;
+}
+
+#NomeP{
+  width: 430px;
+  height: 20px;
+}
+
+#EmailCF{
+  width: 290px;
+  height: 20px;
+}
+
+#Agendamento{
+  font-size: 18px;
+  margin: 0px 10px;
+  width: 57.7%;
+  height: 7%; 
+}
+
+#Hora{
+  width: 215px;
+  height: 20px;
+}
+
+#DayCF{
+  font-size: 18px;
+  margin: 0px 10px;
+  top: 30%;
+  left: 7%;
+  width: 10%;
+  height: 8%;
+}
+
+#MonthCF{
+  font-size: 18px;
+  margin: 0px 5px;
+  top: 30%;
+  left: 7%;
+  width: 17%;
+  height: 8%;
+}
+
+#YearCF{
+  font-size: 18px;
+  margin: 0px 10px;
+  top: 30%;
+  left: 7%;
+  width: 10%;
+  height: 8%;
+}
+
+#Observacoes{
+  left: 3%;
+  position: absolute;
+  width: 92%;
+  height: 32%;
+}
+
+#Senha{
+  width: 400px;
+  height: 20px;
+}
+
+#Cancelar{
+  background-color: #0d5482;
+  color: white;
+  border-color: black;
+  position: absolute;
+  right: 23%;
+  bottom: 2%;
+  width: 15%;
+  height: 5%;
+  border-radius: 4px;
+}
+
+#Salvar{
+  background-color: #3baee4;
+  color: white;
+  border-color: black;
+  position: absolute;
+  right: 4%;
+  bottom: 2%;
+  width: 15%;
+  height: 5%;
+  border-radius: 4px;
+}
+/*Switch Input CalendarioForm*/
+.switch {
+  position: relative;
+  display: inline-block;
+  margin: 0px 10px;
+  top: 5px;
+  width: 55px;
+  height: 20px;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #737373;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 30px;
+  width: 30px;
+  left: 0px;
+  top: -4px;
+  background-color: #5ac8fa;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .slider {
+  background-color: #3baee4;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}

@@ -1,27 +1,33 @@
 import React from 'react';
-import './Home.css'
-import HomeButton from './Icons/HomeButton.png'
-import CalendarioButton from './Icons/CalendarioButton.png'
-import PacienteButton from './Icons/PacienteButton.png'
-import ProntuarioButton from './Icons/ProntuarioButton.png'
-import Remove from './Icons/Remove.png'
-import Accept from './Icons/Accept.png'
-import Update from './Icons/Update.png'
-import Add from './Icons/Add.png'
+import {useNavigate} from 'react-router-dom';
+import './Home.css';
 
-export default function Calendario(){
+export default function CalendarioForm(){
+  const navigate = useNavigate();
 
   return(
     <div className="App">
-    <div className="Menu">
-      <a href='/'><img className="MenuB" src={HomeButton} alt="a"/></a>
-      <a href='/Calendario'><img className="MenuB" src={CalendarioButton} alt="a"/></a>
-      <a href='/Paciente'><img className="MenuB" src={PacienteButton} alt="a"/></a>
-      <a href='/Prontuario'><img className="MenuB" src={ProntuarioButton} alt="a"/></a>
-    </div>
-    
-      <div id="divOptions">
-          <select id="Day">
+    <header className="App-header">
+      <div id="calendarioForm">
+        Nome do Paciente: <input type="text" id="NomeP"></input>
+        <br></br>
+        Email: <input type="text" id="EmailCF"></input> 
+        Enviar Lembrete? 
+        <label class="switch">
+          <input type="checkbox"></input>
+          <span class="slider round"></span>
+        </label>
+        <br></br>
+        Tipo de Agendamento:
+        <select id="Agendamento">
+            <option>Primeira Consulta</option>
+            <option>Acompanhamento</option>
+            <option>Teste Cognitivo</option>
+          </select>
+          <br></br>
+          Hora: <input type="text" id="Hora"></input> 
+          Data:
+          <select id="DayCF">
             <option>Day</option>
             <option>1</option>
             <option>2</option>
@@ -55,7 +61,7 @@ export default function Calendario(){
             <option>30</option>
             <option>31</option>
           </select>
-          <select id="Month">
+          <select id="MonthCF">
             <option>Month</option>
             <option>January</option>
             <option>February</option>
@@ -70,7 +76,7 @@ export default function Calendario(){
             <option>November</option>
             <option>December</option>
           </select>
-          <select id="Year">
+          <select id="YearCF">
             <option>Year</option>
             <option>2021</option>
             <option>2020</option>
@@ -95,16 +101,21 @@ export default function Calendario(){
             <option>2001</option>
             <option>2000</option>
           </select>
-          <select id="Dr">
-            <option>Dr. Fulanesco</option>
-            <option>Dra. Beltranberg</option>
-            <option>Dra. Fulanovski</option>
-          </select>
-        </div>
-        
-      <header className="App-header">
-        <div id="divTableCalendario">
-            <table class="blueTable">
+          Observações:
+          <br></br>
+          <textarea id="Observacoes"></textarea>
+          <br></br>
+          <br></br>
+          <br></br>
+          <br></br>
+          <br></br>
+          <p align="Center">Senha Funcionário: <input type="text" id="Senha"></input></p>
+          <button id="Cancelar" onClick={() => navigate('/Calendario')}>Cancelar</button>
+          <button id="Salvar" onClick={() => navigate('/Calendario')}>Salvar</button>
+      </div>
+
+      <div id="CFormTable">
+        <table class="blueTable">
               <thead>
               <tr>
               <th>Nome</th>
@@ -206,68 +217,20 @@ export default function Calendario(){
               <td>cell4_13</td>
               <td>cell5_13</td>
               </tr>
-              <tr>
-              <td>cell1_14</td>
-              <td>cell2_14</td>
-              <td>cell3_14</td>
-              <td>cell4_14</td>
-              <td>cell5_14</td>
-              </tr>
-              <tr>
-              <td>cell1_15</td>
-              <td>cell2_15</td>
-              <td>cell3_15</td>
-              <td>cell4_15</td>
-              <td>cell5_15</td>
-              </tr>
-              <tr>
-              <td>cell1_16</td>
-              <td>cell2_16</td>
-              <td>cell3_16</td>
-              <td>cell4_16</td>
-              <td>cell5_16</td>
-              </tr>
-              <tr>
-              <td>cell1_17</td>
-              <td>cell2_17</td>
-              <td>cell3_17</td>
-              <td>cell4_17</td>
-              <td>cell5_17</td>
-              </tr>
-              <tr>
-              <td>cell1_18</td>
-              <td>cell2_18</td>
-              <td>cell3_18</td>
-              <td>cell4_18</td>
-              <td>cell5_18</td>
-              </tr>
-              <tr>
-              <td>cell1_19</td>
-              <td>cell2_19</td>
-              <td>cell3_19</td>
-              <td>cell4_19</td>
-              <td>cell5_19</td>
-              </tr>
-              <tr>
-              <td>cell1_20</td>
-              <td>cell2_20</td>
-              <td>cell3_20</td>
-              <td>cell4_20</td>
-              <td>cell5_20</td>
-              </tr>
               </tbody>
               </table>
-        </div>
+      </div>
 
-        <div id="Calendario">
-          Coming soon...
-        </div>
+      <div id="CFormCalendario">
+        Coming soon...
+      </div>
 
-        <img id="Remove" src={Remove} alt="a"/>
-        <img id="Accept" src={Accept} alt="a"/>
-        <a href='/CalendarioForm'><img id="Update" src={Update} alt="a"/></a>
-        <a href='/CalendarioForm'><img id="Add" src={Add} alt="a"/></a>
-      </header>
+      <select id="DrCF">
+            <option>Dr. Fulanesco</option>
+            <option>Dra. Beltranberg</option>
+            <option>Dra. Fulanovski</option>
+          </select>
+    </header>
     </div>
   );
 }

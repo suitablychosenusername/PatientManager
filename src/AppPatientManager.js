@@ -1,7 +1,7 @@
 import React from 'react';
 import './App.css';
 
-function Calendario() {
+function AppPatientManager() {
   return (
     <div className="App">
     <div className="Menu">
@@ -19,4 +19,4 @@ function Calendario() {
   );
 }
 
-export default Calendario;
+export default AppPatientManager;

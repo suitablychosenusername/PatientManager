@@ -6,6 +6,7 @@ import{
 
 import Home from './Pages/Home';
 import Calendario from './Pages/Calendario';
+import CalendarioForm from './Pages/CalendarioForm';
 import Paciente from './Pages/Paciente';
 import PacienteForm from './Pages/PacienteForm';
 import PacienteTable from './Pages/PacienteTable';
@@ -16,6 +17,7 @@ export default function MainRoutes(){
     <Routes>
       <Route path="/" element={<Home />} />
       <Route path="/Calendario" element={<Calendario />} />
+       <Route path="/CalendarioForm" element={<CalendarioForm />} />
       <Route path="/Paciente" element={<Paciente />} />
       <Route path="/PacienteForm" element={<PacienteForm />} />
       <Route path="/PacienteTable" element={<PacienteTable />} />
