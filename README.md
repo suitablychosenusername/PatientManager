@@ -1,3 +1,7 @@
+# Proposta de sistema de gerenciamento de pacientes.
+Por:
+- Fabio Lapa
+- Maycon Douglas
 ## HTML e CSS Básico pronto.
 O HTML e CSS base para todas as telas concluído.
 
